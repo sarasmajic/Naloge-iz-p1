@@ -1,0 +1,4 @@
+BF-FRI: trava,gravel,pesek
+BF-FDV: pesek
+BF-EF:
+FRI-EF: trava

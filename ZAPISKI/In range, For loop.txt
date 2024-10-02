@@ -1,0 +1,14 @@
+
+#% ---> ostanek
+#// --> 5//2 = 2 (kokrat gre 2 v 5 --> samo 2x)
+#/ --> normalno deljenje (5/2 = 2.5)
+
+recimo če hočes seznamu spreminjati vsote oz vrednosti ti tega z navadnim for loopom nemoreš
+
+primer: 
+   for e in seznam:
+      if e[0] == 7:
+         print("true")
+
+nazaj vrne error da int ni subscriptable kar pomeni da jim nemoreš določevat indeksa, zato v 
+tem primeru rabiš for i in range

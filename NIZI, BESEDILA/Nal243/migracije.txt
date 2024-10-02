@@ -1,0 +1,5 @@
+8: Maribor -> Ljubljana
+3: Maribor -> Nova Gorica
+10: Ljubljana -> Maribor
+5: Koper -> Nova Gorica
+3: Novo mesto -> Nova Gorica

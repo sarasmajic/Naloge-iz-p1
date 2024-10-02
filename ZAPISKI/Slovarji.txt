@@ -1,0 +1,107 @@
+#% ---> ostanek
+#// --> 5//2 = 2 (kokrat gre 2 v 5 --> samo 2x)
+#/ --> normalno deljenje (5/2 = 2.5)
+
+recimo če hočes seznamu spreminjati vsote oz vrednosti ti tega z navadnim for loopom nemoreš
+
+primer: 
+   for e in seznam:
+      if e[0] == 7:
+         print("true")
+
+nazaj vrne error da int ni subscriptable kar pomeni da jim nemoreš določevat indeksa, zato v 
+tem primeru rabiš for i in range
+
+
+seznam = [1,2,3,4,5,6,7,8]
+
+if len(seznam) > 4 == 0:
+    for i in range(len(seznam)) // 4:
+        sum = 0
+        for j in range(4):
+        sum += seznam[4*i+j]
+
+    print(sum / 4)
+
+
+------------  VREDNOSTI RABIJO BITI SEZNAMI: -----------
+če maš recimo en ključ katerega vrednosti (values) rabijo biti seznami,
+potem v tistem delu ko preverjaš če ključ obstaja ali ne, namesto da kluc nastavis na vrednost,
+mu nastaviš nov seznam. 
+
+kasneje izven loopa k temu seznamu appendas stvari ki jih rabis, dolocis (naloga 91)
+
+for i in range(len(besede) - 1):
+        #print(besede[i]) -- izpise besede
+        if besede[i] not in slovar:
+            slovar[besede[i]] = [] #ce besede ni v slovarju, naj se ustvari kljuc, katerega vrednost je prazen seznam.
+            #in: [], to: [] itd...
+        
+        slovar[besede[i]].append(besede[i + 1])
+            
+    
+    print(slovar)
+
+
+
+
+----------  KAKO PREVERITI ČE JE SLOVAR PRAZEN? ------------
+z len.
+if len(slovar) == 0:
+    return None
+
+
+
+
+------------- MNOŽICE, DODAJANJE ----------------
+= set()
+slovar.add(x) -- dodajanje
+
+
+
+--------------- GET --------------------------
+
+
+#cene = {} #cene vseh predmetov           MOZNA RESITEV Z GETOM
+
+#for vrstica in open("zapisnik.txt"):
+#    predmet, oseba, cena_predmeta = vrstica.split(",") #trenutni predmet, oseba in cena
+
+#    cena_predmeta = int(cena_predmeta)
+#    if(cena_predmeta > cene.get(predmet, 0)): #če je trenutna cena predmeta > najvišja do sedaj videna cena predmeta
+#        cene[predmet] = cena_predmeta (ta del)
+
+#cene.get -- če v slovarju predmeta se ni, naj mu value nastavi na 0. Cena predmeta je recimo 5 
+# kar je vecje kot 0 in se nastavi tako, ker se vedno gleda če je naslednja večja kot trenutna (ta del)
+
+
+
+
+
+----------------- VREDNOST -------------
+Dobiš lahko vrednost od ključa takole slovar[kljuc]
+če greš čez slovar s for loopom ubistvu dobivaš ključe
+
+če mas za vrednost ključa seznam in rabiš specifičen index potem lahko slovar[kljuc][-1] npr
+
+
+
+slovar[kljuc] -- vrednost kljuca
+
+
+
+------------- GET ------------
+slovar[kljuc] je identicno kot slovar.get(kljuc)
+
+
+Edina razlika je ce kljuc ne obstaja v slovarju.
+V takem primeru ti slovar[kljuc] vrne None,
+
+slovar.get(kljuc, 0) ti pa vrne 0, oziroma kerokol vrednost mas na drugem mestu
+
+
+LAHKO GRES TKOLE CEZ KLJUCE NPR NI TREBA .ITEMS()
+PAZI DVOJNI FOR LOOP GRE ELEMENT Z  ELEMENTOM KAR NI NUJNO DA RABIS (NPR K SI POVP RACUNALA)
+for kljuc in slovar_cen:
+    povprecje = slovar_cen[kljuc] / slovar_stevcev[kljuc]
+    seznam.append((povprecje, kljuc))

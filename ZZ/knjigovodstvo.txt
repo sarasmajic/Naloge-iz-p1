@@ -1,0 +1,7 @@
+slika: 50
+slika: 100
+tempera: -3
+stol: -20
+kip: 20
+zrak: 0
+torba: 12

@@ -1,0 +1,5 @@
+Kranj, 10101, 5, 0
+Kranj, 11101, 5, 0
+Kranj, 91910, 10, 1
+Ljubljana, 1001, 10, 1
+Ljubljana, 1001, 10, 0

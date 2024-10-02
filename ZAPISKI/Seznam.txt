@@ -1,0 +1,1 @@
+ce rabis da se for loop neha, pa da izpise takoj prvo stvar k jo vid das BREAK!!!

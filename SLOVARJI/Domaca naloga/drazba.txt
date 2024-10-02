@@ -1,0 +1,15 @@
+slika,Berta,31
+slika,Ana,33
+slika,Berta,35
+slika,Fanči,37
+slika,Ana,40
+slika,Fanči,45
+pozlačen dežnik,Cilka,15
+pozlačen dežnik,Ema,29
+Meldrumove vaze,Greta,44
+Meldrumove vaze,Ana,46
+Meldrumove vaze,Ema,67
+kip,Cilka,20
+kip,Ema,1
+srebrn jedilni servis,Ema,110
+srebrn jedilni servis,Cilka,100

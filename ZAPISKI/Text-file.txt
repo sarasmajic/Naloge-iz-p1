@@ -1,0 +1,4 @@
+for vrstica in open("vremenske-postaje.txt"):   -- tko greš čez txt file
+
+
+kraj, datum, najvisja, najnizja = vrstica.split(",")  -- lahko splittas v vec podatkov

@@ -1,0 +1,7 @@
+ana:x:500:ana
+berta:x:501:berta
+cilka:x:502:cilka
+dani:x:503:dani 
+ordinary:x:504:ana,berta,cilka,dani
+taccess:x:505:berta,cilka
+wusers:x:506:ana,cilka
